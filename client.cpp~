@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+#include "complex.h"
+
+int main() {
+    complex c1(1.7,2.8);
+    complex c2(2.3,4.5);
+    complex c3(2.95,-1.32);
+
+    cout<<c1<<c2<<c3<<endl;
+    cout<<c1+c2;
+    cout<<C1-c2;
+}

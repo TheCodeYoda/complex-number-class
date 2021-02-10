@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+#include "complex.h"
+
+complex::complex(double real, double imag) {
+  real_=real;
+  imag_=imag;
+}
+
+complex operator+(const complex& lhs,const complex& rhs) {
+  return complex(lhs.real_+rhs.real_,lhs.imag_+rhs.imag_);
+}
+
+complex operator-(const complex& lhs,const complex& rhs) {
+  return complex(lhs.real_-rhs.real_,lhs.imag_-rhs.imag_);
+}
+
+ostream& operator<<(ostream& o,complex &c) {
+  return o<<c.real_<<"|"<<c.imag_;
+}
